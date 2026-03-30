@@ -1,0 +1,12 @@
+services:
+  
+  web:
+    
+    build: .
+    ports:
+      - "8080:8080"
+    # Переменные окружения
+    environment:
+      - NODE_ENV=development
+      - FASTIFY_ADDRESS=0.0.0.0
+
